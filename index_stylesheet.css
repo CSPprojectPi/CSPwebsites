@@ -1,0 +1,22 @@
+.tablestyle2 th {
+  background-color: #4CAF50;
+  color: grey;
+}
+
+td, th {
+    border: 1px solid #4CAF50;
+    text-align: center;
+    padding: 20px auto;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+.box {
+  border: 5px solid rgb(96, 185, 142);
+  position: relative;
+  width: auto;
+  margin: 10px 0px;
+  background-color: lightblue;
+}
