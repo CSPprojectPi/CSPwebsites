@@ -32,7 +32,7 @@
     <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
       Enter the operation you want to do. Either +, -, x, /, or m <br><input type="text" name="arg1"><br><br>
       Enter the first number: <br><input type="text" name="arg2"><br><br>
-      Enter the second number<br> <input type="text" name="arg3"><br><br>
+      Enter the second number: <br><input type="text" name="arg3"><br><br>
       <input type="submit">
     </form>
 
