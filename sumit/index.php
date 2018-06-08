@@ -12,7 +12,7 @@
 
     <?php
        // define variables and set to empty values
-       $arg1 = $arg2 $arg3 = $output = $retc = "";
+       $arg1 = $arg2 = $arg3 = $output = $retc = "";
 
        if ($_SERVER["REQUEST_METHOD"] == "POST") {
          $arg1 = test_input($_POST["arg1"]);
