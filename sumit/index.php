@@ -30,9 +30,9 @@
     ?>
 
     <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
-      Arg1: <input type="text" name="arg1"><br>
-      Arg2: <input type="text" name="arg2"><br>
-      Arg3: <input type="text" name="arg3"><br>
+      Arg1: <input type="text" name="Enter the operation you want to do. Either +, -, x, /, or m"><br>
+      Arg2: <input type="text" name="Enter the first number:"><br>
+      Arg3: <input type="text" name="Enter the second number:"><br>
       <input type="submit">
     </form>
 
