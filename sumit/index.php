@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Form Input 2</title>
+    <title>Calculator</title>
   </head>
 
 
   <body>
 
-    <h1>Form Input 2</h1>
-    <p>Demo of how to take form input and pass it to a C program - all in a single page</p>
+    <h1>Sumit's Calculator</h1>
+    <p>Three arguments are needed. First put the operation on the operation box. This can either be +, -, x, /, m. m is modulous. Then in the next two boxes, enter the two numbers you want to operate with.</p>
 
     <?php
        // define variables and set to empty values
-       $arg1 = $arg2 = $output = $retc = "";
+       $arg1 = $arg2 $arg3 = $output = $retc = "";
 
        if ($_SERVER["REQUEST_METHOD"] == "POST") {
          $arg1 = test_input($_POST["arg1"]);
          $arg2 = test_input($_POST["arg2"]);
+         $arg3 = test_input($_POST["arg3"]);
          exec("/usr/lib/cgi-bin/student4/calc " . $arg1 . " " . $arg2, $output, $retc); 
        }
 
@@ -31,6 +32,7 @@
     <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
       Arg1: <input type="text" name="arg1"><br>
       Arg2: <input type="text" name="arg2"><br>
+      Arg3: <input type="text" name="arg3"><br>
       <input type="submit">
     </form>
 
@@ -40,8 +42,10 @@
        echo "<br>";
        echo $arg2;
        echo "<br>";
+       echo $arg3;
+       echo "<br>";
        
-       echo "<h2>C Program Output (an array):</h2>";
+       echo "<h2>C Calculator program Output:</h2>";
        foreach ($output as $line) {
          echo $line;
          echo "<br>";
