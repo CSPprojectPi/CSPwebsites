@@ -37,7 +37,7 @@
     </form>
 
     <?php
-       echo "<h2>Your Input:</h2>";
+       echo "<h2>Calculator Input:</h2>";
        echo $arg1;
        echo "<br>";
        echo $arg2;
