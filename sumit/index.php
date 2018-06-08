@@ -47,6 +47,7 @@
        
        echo "<h2>C Calculator program Output:</h2>";
        foreach ($output as $line) {
+         <p>Answer: </p>
          echo $line;
          echo "<br>";
        }
